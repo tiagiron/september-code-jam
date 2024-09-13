@@ -95,7 +95,7 @@ const questions = [
     text: "Lastly, what's your favorite fall activity?",
     answers: [
       {
-        text: "Visitng a pumpkin patch",
+        text: "Visiting a pumpkin patch",
         image:
           "https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg?auto=compress&cs=tinysrgb&w=600",
         alt: "Pumpkin patch",
@@ -131,10 +131,11 @@ const answers = [
     combination: ["Sweet", "Visiting a pumpkin patch"],
     text: "Pumpkin Spice Latte",
     image:
-      "https://plus.unsplash.com/premium_photo-1667210180343-3ed8d69d7e07?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cHVtcGtpbiUyMGxhdHRlfGVufDB8fDB8fHww",
+      "https://media.istockphoto.com/id/856503922/photo/pumpkin-spice-latte.jpg?s=612x612&w=0&k=20&c=J5Zkyj8TZ4RfWAP4U_xDXzkf3KV1ypAHoPNgIcZ3r2c=",
     alt: "Pumpkin Spice Latte",
     description:
       "A Fall classic as spirited as you. Nothing says Fall like enjoying a PSL with your friends, driving with the windows down blasting 'All Too Well' Taylor's Version on your way to the pumpkin patch. ",
+    credit: "Mizina",
   },
   {
     combination: ["Silly", "Having a picnic"],
@@ -144,24 +145,37 @@ const answers = [
     alt: "Iced Latte",
     description:
       "You deserve a drink as exciting, outgoing, and adventurous as you. Try something new this season that's tasty, fun, and maybe even a little out of the ordinary. You'll thank us later!",
+    credit: "bhofack2",
   },
   {
-    combination: ["Watching Football"],
+    combination: ["Bold", "Watching football"],
     text: "Americano",
     image:
-      "https://plus.unsplash.com/premium_photo-1669261713035-b0dfd9572b0a?w=800&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YW1lcmljYW5vfGVufDB8fDB8fHww",
+      "https://media.istockphoto.com/id/1413678575/photo/ice-americano-stock-photo.jpg?s=612x612&w=0&k=20&c=L158Kl4WmXTNLUxz-kDesRcfXaYqgLRJaDW5-tRkIQ8=",
     alt: "Americano",
     description:
       "Hot or cold, you need something quick, no funny business, and easy so that you can go back to the stuff that matters: shouting at the TV with your best friends.",
+    credit: "evrim ertik",
   },
   {
-    combination: ["Relaxed", "Sitting by the fire, watching a movie"],
+    combination: [],
     text: "Chai Latte",
     image:
       "https://media.istockphoto.com/id/1135480753/photo/chai-latte.webp?a=1&b=1&s=612x612&w=0&k=20&c=e4Or4D3lW7KgWDBZMAKmCQDKKdK_Ofp_JHn0ZWhNBfI=",
     alt: "Chai Latte",
     description:
       "Just like you, this chai latte is calming, cozy, and perfectly put together. So sit back, light a candle, and take a nice, deep breath while sipping your chai in your fuzzy socks.",
+    credit: "invizbk",
+  },
+  {
+    combination: ["Bold", "Sitting by the fire, watching a movie"],
+    text: "Caramel Macchiato",
+    image:
+      "https://media.istockphoto.com/id/587950814/photo/latte-macchiato-with-whipped-cream-and-caramel-sauce-in-tall.webp?a=1&b=1&s=612x612&w=0&k=20&c=dojz05GWBFvV4YM46JiRqhudvi15c_D5gbGsUFkgx_g=",
+    alt: "Caramel Macchiato",
+    description:
+      "When in doubt, stick with a good ol' caramel macchiato. Just like you, this drink can be a little bit of everything.. and we love it for that! The perfect combination of sweet, bold, and spirited, and the best choice for a Fall day.",
+    credit: "Foxys_forest_manufacture",
   },
 ];
 
@@ -242,18 +256,14 @@ const showAnswer = () => {
   let result;
   answers.forEach((answer) => {
     if (
-      selectedAnswers.includes(answer.combination[0]) +
-      selectedAnswers.includes(answer.combination[1]) +
-      selectedAnswers.includes(answer.combination[2]) +
-      selectedAnswers.includes(answer.combination[3])
+      selectedAnswers.includes(answer.combination[0]) &&
+      selectedAnswers.includes(answer.combination[1])
     ) {
       return (result = answer);
     } else if (!result) {
-      result = answers[0];
+      result = answers[4];
     }
   });
-
-  console.log(result);
 
   const answerBlock = document.createElement("div");
   answerBlock.classList.add("result-block");
@@ -264,8 +274,16 @@ const showAnswer = () => {
   answerImage.setAttribute("alt", result.alt);
   const answerDescription = document.createElement("p");
   answerDescription.textContent = result.description;
+  const answerInfo = document.createElement("span");
+  const imageLink = document.createElement("a");
+  imageLink.setAttribute("href", result.image);
+  imageLink.textContent = result.credit;
+  const sourceLink = document.createElement("a");
+  sourceLink.textContent = "iStockPhoto";
+  sourceLink.setAttribute("src", "https://www.unsplash.com");
+  answerInfo.append(imageLink, " on ", sourceLink);
 
-  answerBlock.append(answerTitle, answerImage, answerDescription);
+  answerBlock.append(answerTitle, answerImage, answerInfo, answerDescription);
 
   answerDisplay.append(answerBlock);
 
