@@ -97,30 +97,30 @@ const questions = [
       {
         text: "Visiting a pumpkin patch",
         image:
-          "https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://media.istockphoto.com/id/1157022831/photo/pumpkins-on-a-farm.jpg?s=612x612&w=0&k=20&c=Zu37D_IKrlsDoq71MMPSCsi3pP73dXeAe_Aug8Mdk_8=",
         alt: "Pumpkin patch",
-        credit: "name",
+        credit: "ucpage",
       },
       {
         text: "Sitting by the fire, watching a movie",
         image:
-          "https://images.pexels.com/photos/5540160/pexels-photo-5540160.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://media.istockphoto.com/id/1314928174/photo/woman-with-cup-of-drink-and-book-near-fireplace-at-home-closeup.jpg?s=612x612&w=0&k=20&c=MeJbhIUr1OYpAqYxv8QZ7fZsczXeUk9tu2ovZOLC_T4=",
         alt: "Fire place and movie",
-        credit: "name",
+        credit: "Liudmila Chernetska",
       },
       {
         text: "Having a picnic",
         image:
-          "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTl0bGVqcTdvOXNtZ213ZjB6MmUyN2ppeWpmaDEyenh5c2hvaGltNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26uf9vf8zZchBxJrq/giphy.webp",
+          "https://media.istockphoto.com/id/1188421171/photo/preparing-food-outdoors-together.jpg?s=612x612&w=0&k=20&c=DFKRJJRrAPAjkkS99am2wMFjc9p5XYFn6euWI_HKcj8=",
         alt: "Picnic",
-        credit: "name",
+        credit: "Kosamtu",
       },
       {
         text: "Watching football",
         image:
-          "https://images.pexels.com/photos/207983/pexels-photo-207983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://media.istockphoto.com/id/1224519653/photo/cheerful-black-family-cheering-while-watching-rugby-match-on-tv-at-home.jpg?s=612x612&w=0&k=20&c=uHtyqT93a5TUY51Ftw_I1IRm7EIQzZ1KWjEIJ8p38u8=",
         alt: "Football game",
-        credit: "name",
+        credit: "skynesher",
       },
     ],
   },
@@ -202,7 +202,7 @@ const populateQuestions = () => {
       const answerBlock = document.createElement("div");
       answerBlock.classList.add("answer-block");
       answerBlock.addEventListener("click", () =>
-        handleClick(question.id, answer.text),
+        handleClick(question.id, answer.text)
       );
       const answerImage = document.createElement("img");
       answerImage.setAttribute("src", answer.image);
@@ -289,13 +289,13 @@ const showAnswer = () => {
 
   const allAnswerBlocks = document.querySelectorAll(".answer-block");
   Array.from(allAnswerBlocks).forEach((answerBlock) =>
-    answerBlock.replaceWith(answerBlock.cloneNode(true)),
+    answerBlock.replaceWith(answerBlock.cloneNode(true))
   );
 };
 
 const disableQuestionBlock = (questionId, selectedAnswer) => {
   const currentQuestionBlock = document.getElementById(
-    questionId + "-questions",
+    questionId + "-questions"
   );
 
   Array.from(currentQuestionBlock.children).forEach((block) => {
