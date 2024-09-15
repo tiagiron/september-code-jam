@@ -158,7 +158,7 @@ const answers = [
     credit: "evrim ertik",
   },
   {
-    combination: [],
+    combination: ["Demure", "Sitting by the fire, watching a movie"],
     text: "Chai Latte",
     image:
       "https://media.istockphoto.com/id/1135480753/photo/chai-latte.webp?a=1&b=1&s=612x612&w=0&k=20&c=e4Or4D3lW7KgWDBZMAKmCQDKKdK_Ofp_JHn0ZWhNBfI=",
@@ -202,7 +202,7 @@ const populateQuestions = () => {
       const answerBlock = document.createElement("div");
       answerBlock.classList.add("answer-block");
       answerBlock.addEventListener("click", () =>
-        handleClick(question.id, answer.text)
+        handleClick(question.id, answer.text),
       );
       const answerImage = document.createElement("img");
       answerImage.setAttribute("src", answer.image);
@@ -219,9 +219,7 @@ const populateQuestions = () => {
       sourceLink.textContent = "Unsplash";
       sourceLink.setAttribute("src", "https://www.unsplash.com");
       answerInfo.append(imageLink, " to ", sourceLink);
-+
-
-      answerBlock.append(answerImage, answerTitle, answerInfo);
+      +answerBlock.append(answerImage, answerTitle, answerInfo);
 
       answersBlock.append(answerBlock);
     });
@@ -290,13 +288,13 @@ const showAnswer = () => {
 
   const allAnswerBlocks = document.querySelectorAll(".answer-block");
   Array.from(allAnswerBlocks).forEach((answerBlock) =>
-    answerBlock.replaceWith(answerBlock.cloneNode(true))
+    answerBlock.replaceWith(answerBlock.cloneNode(true)),
   );
 };
 
 const disableQuestionBlock = (questionId, selectedAnswer) => {
   const currentQuestionBlock = document.getElementById(
-    questionId + "-questions"
+    questionId + "-questions",
   );
 
   Array.from(currentQuestionBlock.children).forEach((block) => {
