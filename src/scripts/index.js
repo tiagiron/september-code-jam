@@ -9,16 +9,16 @@ const questions = [
       {
         text: "Hot",
         image:
-          "https://media.istockphoto.com/id/113494458/photo/fire-isolated-over-black-background.jpg?s=612x612&w=0&k=20&c=u6STGsSpJAyBN8kDeqnVUla4-0SnLpdaTsehFsey2p0=",
-        alt: "Flames",
-        credit: "OlgaMiltsova",
+          "https://media.istockphoto.com/id/949190686/photo/close-up-of-thermometer-on-sand.jpg?s=612x612&w=0&k=20&c=SF-oXrsA3Pw9nTZn4gCtcY9e9zqu8kTirCUt3CZbT9o=",
+        alt: "Hot",
+        credit: "AndreyPopov",
       },
       {
         text: "Cold",
         image:
-          "https://plus.unsplash.com/premium_vector-1725349606996-4db3f151cf99?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdpbnRlcnxlbnwwfHwwfHx8MA%3D%3D",
-        alt: "Polar bears on ice",
-        credit: "MuchMania",
+          "https://media.istockphoto.com/id/522778505/photo/winter-background.jpg?s=612x612&w=0&k=20&c=TZtMPOVHblMUyNNrLbwZiWmuM3vSN8nmd9zR4T1XZ-8=",
+        alt: "Cold",
+        credit: "ivandzyuba",
       },
     ],
   },
@@ -65,7 +65,7 @@ const questions = [
         image:
           "https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg?auto=compress&cs=tinysrgb&w=600",
         alt: "Excited image",
-        credit: "name",
+        credit: "zamrznutitonovi",
       },
       {
         text: "Relaxed",
@@ -79,7 +79,7 @@ const questions = [
         image:
           "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTl0bGVqcTdvOXNtZ213ZjB6MmUyN2ppeWpmaDEyenh5c2hvaGltNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26uf9vf8zZchBxJrq/giphy.webp",
         alt: "Tweak from South Park",
-        credit: "name",
+        credit: "tadamichi",
       },
       {
         text: "Happy",
