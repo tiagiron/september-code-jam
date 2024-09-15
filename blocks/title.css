@@ -1,0 +1,11 @@
+.title-block {
+  width: 600px;
+  height: auto;
+  background-color: rgb(222, 146, 58);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  color: white;
+  font-family: "Roboto Condensed", sans-serif;
+}
