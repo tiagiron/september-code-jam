@@ -1,11 +1,13 @@
 .title-block {
-  width: 600px;
-  height: auto;
-  background-color: rgb(222, 146, 58);
+  background-color: #e6661c;
   border-radius: 5px;
   display: flex;
   justify-content: center;
   align-content: center;
   color: white;
   font-family: "Roboto Condensed", sans-serif;
+  font-size: 25px;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+  padding: 5px;
 }

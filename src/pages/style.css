@@ -1,0 +1,20 @@
+@import url("https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,538;1,538&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(../blocks/header.css);
+@import url(../blocks/page.css);
+@import url(../blocks/description.css);
+@import url(../blocks/answer.css);
+@import url(../blocks/result.css);
+@import url(../blocks/content.css);
+@import url(../blocks/title-block.css);
+@import url(../blocks/footer.css);
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+}
+
+body {
+  margin: 0;
+}
