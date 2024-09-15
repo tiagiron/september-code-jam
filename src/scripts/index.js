@@ -50,7 +50,7 @@ const questions = [
       {
         text: "Demure",
         image:
-          "https://plus.unsplash.com/premium_photo-1680303134459-912abf8efe2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cXVlc3Rpb258ZW58MHx8MHx8fDA%3D",
+          "https://media.discordapp.net/attachments/1283574512956211302/1284837276945354752/coffee_dates__v1222x580__.jpg?ex=66e81575&is=66e6c3f5&hm=a08735c08d1233a70ec3076fecc62e9ef2dc9df7185ae0e5062c450db261dcf2&=&format=webp&width=1410&height=810",
         alt: "Other flavor image",
         credit: "name",
       },
