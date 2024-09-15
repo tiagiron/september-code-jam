@@ -219,6 +219,7 @@ const populateQuestions = () => {
       sourceLink.textContent = "Unsplash";
       sourceLink.setAttribute("src", "https://www.unsplash.com");
       answerInfo.append(imageLink, " to ", sourceLink);
++
 
       answerBlock.append(answerImage, answerTitle, answerInfo);
 
