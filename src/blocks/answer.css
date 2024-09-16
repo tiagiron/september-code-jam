@@ -51,7 +51,14 @@
     margin: 5px 0 0 0;
     padding: 0 2px;
   }
+}
 
-  .answer-block p {
+@media screen and (max-width: 400px) {
+  .answer-options {
+    gap: 5px;
+  }
+
+  .answer-block {
+    margin-bottom: 5px;
   }
 }
