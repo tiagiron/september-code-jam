@@ -50,7 +50,7 @@ const questions = [
         credit: "eternalcreative",
       },
       {
-        text: "Demure",
+        text: "Chill",
         image: demureImg,
         alt: "Other flavor image",
         credit: "DemureDragonfly",
@@ -159,7 +159,7 @@ const answers = [
     credit: "evrim ertik",
   },
   {
-    combination: ["Demure", "Sitting by the fire, watching a movie"],
+    combination: ["Chill", "Sitting by the fire, watching a movie"],
     text: "Chai Latte",
     image:
       "https://media.istockphoto.com/id/1135480753/photo/chai-latte.webp?a=1&b=1&s=612x612&w=0&k=20&c=e4Or4D3lW7KgWDBZMAKmCQDKKdK_Ofp_JHn0ZWhNBfI=",
