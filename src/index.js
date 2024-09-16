@@ -1,3 +1,6 @@
+import "./styles/index.css";
+const sweetImg = new URL("./images/sweet-img.jpg", import.meta.url);
+const demureImg = new URL("./images/demure-img.jpg", import.meta.url);
 const questionDisplay = document.querySelector("#questions");
 const answerDisplay = document.querySelector("#answer");
 
@@ -9,16 +12,16 @@ const questions = [
       {
         text: "Hot",
         image:
-          "https://media.istockphoto.com/id/113494458/photo/fire-isolated-over-black-background.jpg?s=612x612&w=0&k=20&c=u6STGsSpJAyBN8kDeqnVUla4-0SnLpdaTsehFsey2p0=",
-        alt: "Flames",
-        credit: "name",
+          "https://media.istockphoto.com/id/949190686/photo/close-up-of-thermometer-on-sand.jpg?s=612x612&w=0&k=20&c=SF-oXrsA3Pw9nTZn4gCtcY9e9zqu8kTirCUt3CZbT9o=",
+        alt: "Hot",
+        credit: "AndreyPopov",
       },
       {
         text: "Cold",
         image:
-          "https://plus.unsplash.com/premium_vector-1725349606996-4db3f151cf99?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHdpbnRlcnxlbnwwfHwwfHx8MA%3D%3D",
-        alt: "Polar bears on ice",
-        credit: "name",
+          "https://media.istockphoto.com/id/522778505/photo/winter-background.jpg?s=612x612&w=0&k=20&c=TZtMPOVHblMUyNNrLbwZiWmuM3vSN8nmd9zR4T1XZ-8=",
+        alt: "Cold",
+        credit: "ivandzyuba",
       },
     ],
   },
@@ -28,31 +31,29 @@ const questions = [
     answers: [
       {
         text: "Sweet",
-        image:
-          "https://images.unsplash.com/photo-1641573260130-74d81b179809?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8ZnJ1aXQlMjBiYXNrZXR8ZW58MHx8MHx8fDA%3D",
-        alt: "Fruity Image",
-        credit: "name",
+        image: sweetImg,
+        alt: "Sweet",
+        credit: "michaelpuche",
       },
       {
         text: "Bold",
         image:
           "https://plus.unsplash.com/premium_photo-1675237625862-d982e7f44696?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8Y29mZmVlJTIwYmVhbnN8ZW58MHx8MHx8fDA%3D",
         alt: "Coffee beans",
-        credit: "name",
+        credit: "Watson_images",
       },
       {
         text: "Silly",
         image:
           "https://images.unsplash.com/photo-1477506350614-fcdc29a3b157?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8bnV0c3xlbnwwfHwwfHx8MA%3D%3D",
         alt: "Picture of nuts",
-        credit: "name",
+        credit: "eternalcreative",
       },
       {
         text: "Demure",
-        image:
-          "https://plus.unsplash.com/premium_photo-1680303134459-912abf8efe2f?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cXVlc3Rpb258ZW58MHx8MHx8fDA%3D",
+        image: demureImg,
         alt: "Other flavor image",
-        credit: "name",
+        credit: "DemureDragonfly",
       },
     ],
   },
@@ -65,28 +66,28 @@ const questions = [
         image:
           "https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg?auto=compress&cs=tinysrgb&w=600",
         alt: "Excited image",
-        credit: "name",
+        credit: "zamrznutitonovi",
       },
       {
         text: "Relaxed",
         image:
-          "https://images.pexels.com/photos/5540160/pexels-photo-5540160.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://media.istockphoto.com/id/1428299005/photo/man-is-sitting-in-a-camping-chair-on-the-background-of-a-forest-lake-on-a-beautiful-summer.jpg?s=612x612&w=0&k=20&c=dQZLIQGXpyLxWvtdpsRkpRXEqM4vZCGefzPtV9h_9Uk=",
         alt: "Relax image",
-        credit: "name",
+        credit: "Mikhail Blavatskiy",
       },
       {
-        text: "Tweaking",
+        text: "Nervous",
         image:
           "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTl0bGVqcTdvOXNtZ213ZjB6MmUyN2ppeWpmaDEyenh5c2hvaGltNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26uf9vf8zZchBxJrq/giphy.webp",
         alt: "Tweak from South Park",
-        credit: "name",
+        credit: "tadamichi",
       },
       {
         text: "Happy",
         image:
-          "https://images.pexels.com/photos/207983/pexels-photo-207983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://media.istockphoto.com/id/1404056329/vector/smiling-happy-faces-and-people.jpg?s=612x612&w=0&k=20&c=MmEtDyHL6FUA74EJkWRTi-dfMeJWcv_KR9LlVhA7xVc=",
         alt: "Smiley Face",
-        credit: "name",
+        credit: "filo",
       },
     ],
   },
@@ -97,30 +98,30 @@ const questions = [
       {
         text: "Visiting a pumpkin patch",
         image:
-          "https://images.pexels.com/photos/154147/pexels-photo-154147.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://media.istockphoto.com/id/1157022831/photo/pumpkins-on-a-farm.jpg?s=612x612&w=0&k=20&c=Zu37D_IKrlsDoq71MMPSCsi3pP73dXeAe_Aug8Mdk_8=",
         alt: "Pumpkin patch",
-        credit: "name",
+        credit: "ucpage",
       },
       {
         text: "Sitting by the fire, watching a movie",
         image:
-          "https://images.pexels.com/photos/5540160/pexels-photo-5540160.jpeg?auto=compress&cs=tinysrgb&w=600",
+          "https://media.istockphoto.com/id/1314928174/photo/woman-with-cup-of-drink-and-book-near-fireplace-at-home-closeup.jpg?s=612x612&w=0&k=20&c=MeJbhIUr1OYpAqYxv8QZ7fZsczXeUk9tu2ovZOLC_T4=",
         alt: "Fire place and movie",
-        credit: "name",
+        credit: "Liudmila Chernetska",
       },
       {
         text: "Having a picnic",
         image:
-          "https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExaTl0bGVqcTdvOXNtZ213ZjB6MmUyN2ppeWpmaDEyenh5c2hvaGltNyZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26uf9vf8zZchBxJrq/giphy.webp",
+          "https://media.istockphoto.com/id/1188421171/photo/preparing-food-outdoors-together.jpg?s=612x612&w=0&k=20&c=DFKRJJRrAPAjkkS99am2wMFjc9p5XYFn6euWI_HKcj8=",
         alt: "Picnic",
-        credit: "name",
+        credit: "Kosamtu",
       },
       {
         text: "Watching football",
         image:
-          "https://images.pexels.com/photos/207983/pexels-photo-207983.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+          "https://media.istockphoto.com/id/1224519653/photo/cheerful-black-family-cheering-while-watching-rugby-match-on-tv-at-home.jpg?s=612x612&w=0&k=20&c=uHtyqT93a5TUY51Ftw_I1IRm7EIQzZ1KWjEIJ8p38u8=",
         alt: "Football game",
-        credit: "name",
+        credit: "skynesher",
       },
     ],
   },
@@ -158,7 +159,7 @@ const answers = [
     credit: "evrim ertik",
   },
   {
-    combination: [],
+    combination: ["Demure", "Sitting by the fire, watching a movie"],
     text: "Chai Latte",
     image:
       "https://media.istockphoto.com/id/1135480753/photo/chai-latte.webp?a=1&b=1&s=612x612&w=0&k=20&c=e4Or4D3lW7KgWDBZMAKmCQDKKdK_Ofp_JHn0ZWhNBfI=",
@@ -219,8 +220,7 @@ const populateQuestions = () => {
       sourceLink.textContent = "Unsplash";
       sourceLink.setAttribute("src", "https://www.unsplash.com");
       answerInfo.append(imageLink, " to ", sourceLink);
-
-      answerBlock.append(answerImage, answerTitle, answerInfo);
+      +answerBlock.append(answerImage, answerTitle, answerInfo);
 
       answersBlock.append(answerBlock);
     });

@@ -1,0 +1,30 @@
+@import url(../blocks/header.css);
+@import url(../blocks/page.css);
+@import url(../blocks/description.css);
+@import url(../blocks/answer.css);
+@import url(../blocks/result.css);
+@import url(../blocks/content.css);
+@import url(../blocks/title-block.css);
+@import url(../blocks/footer.css);
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/RobotoCondensed-VariableFont_wght.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Roboto Condensed";
+  font-style: normal;
+  font-weight: 800;
+  src: url(../fonts/RobotoCondensed-VariableFont_wght.ttf) format("truetype");
+}
+
+* {
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+body {
+  margin: 0;
+}
