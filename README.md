@@ -6,5 +6,6 @@ This project utilized intermediate HTML/CSS in order to build a single-page proj
 _Technologies_
 HTML/CSS JavaScript
 
+
 _Link to GitHub Pages_
 https://tiagiron.github.io/september-code-jam/
