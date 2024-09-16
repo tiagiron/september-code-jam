@@ -12,7 +12,7 @@
   margin-bottom: 10px;
   align-self: center;
   overflow: hidden;
-  box-shadow: rgba(0, 0, 0, 0.3) 0 0 0 1px;
+  box-shadow: #0000004d 0 0 0 1px;
   background-color: white;
 }
 
@@ -34,4 +34,24 @@
 .answer-block a {
   color: rgb(0, 0, 0, 0.5);
   text-decoration: none;
+}
+
+@media screen and (max-width: 550px) {
+  .answer-block {
+    max-width: 185px;
+    height: 268px;
+  }
+
+  .answer-block img {
+    height: 194px;
+  }
+
+  .answer-block h3 {
+    font-size: 20px;
+    margin: 5px 0 0 0;
+    padding: 0 2px;
+  }
+
+  .answer-block p {
+  }
 }

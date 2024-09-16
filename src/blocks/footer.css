@@ -26,3 +26,17 @@
 .footer__authors_date {
   margin: 0;
 }
+
+@media screen and (max-width: 480px) {
+  .footer {
+    display: flex;
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+  .footer__authors {
+    display: flex;
+    margin-bottom: 25px;
+    gap: 25px;
+  }
+}
