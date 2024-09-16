@@ -3,7 +3,7 @@
   justify-content: space-between;
   font-size: 24px;
   padding: 180px 100px 30px;
-  align-items: start;
+  align-items: flex-start;
   color: #7b441d;
 }
 

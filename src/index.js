@@ -1,3 +1,6 @@
+import "./styles/index.css";
+const sweetImg = new URL("./images/sweet-img.jpg", import.meta.url);
+const demureImg = new URL("./images/demure-img.jpg", import.meta.url);
 const questionDisplay = document.querySelector("#questions");
 const answerDisplay = document.querySelector("#answer");
 
@@ -28,8 +31,7 @@ const questions = [
     answers: [
       {
         text: "Sweet",
-        image:
-          "https://cdn.discordapp.com/attachments/1283574512956211302/1284835815700172881/Triffle-PART-bf251ca.jpg?ex=66e81419&is=66e6c299&hm=3a1b85ca111e28ae49c58cbfe508b3ba478bc6f5543e6f80ade80534ba6d992a&",
+        image: sweetImg,
         alt: "Sweet",
         credit: "michaelpuche",
       },
@@ -49,8 +51,7 @@ const questions = [
       },
       {
         text: "Demure",
-        image:
-          "https://media.discordapp.net/attachments/1283574512956211302/1284837276945354752/coffee_dates__v1222x580__.jpg?ex=66e81575&is=66e6c3f5&hm=a08735c08d1233a70ec3076fecc62e9ef2dc9df7185ae0e5062c450db261dcf2&=&format=webp&width=1410&height=810",
+        image: demureImg,
         alt: "Other flavor image",
         credit: "DemureDragonfly",
       },
