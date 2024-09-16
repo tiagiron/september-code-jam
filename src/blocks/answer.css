@@ -51,7 +51,31 @@
     margin: 5px 0 0 0;
     padding: 0 2px;
   }
+}
 
-  .answer-block p {
+@media screen and (max-width: 420px) {
+  .answer-options {
+    gap: 5px;
+  }
+
+  .answer-block {
+    margin-bottom: 5px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .answer-block {
+    max-width: 175px;
+    height: 253px;
+  }
+
+  .answer-block img {
+    height: 182px;
+  }
+
+  .answer-block h3 {
+    font-size: 18px;
+    margin: 5px 0 0 0;
+    padding: 0 2px;
   }
 }
