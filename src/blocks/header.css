@@ -10,15 +10,9 @@
 .header__title {
   max-width: 50%;
   margin: 50px 0;
-  font-size: 52em;
+  font-size: 2em;
   color: white;
   background-color: #00ecf0;
   padding: 25px 20px;
   border-radius: 24px;
-}
-
-@media screen and (max-width: 480px) {
-  .header__title {
-    font-size: 40px;
-  }
 }
